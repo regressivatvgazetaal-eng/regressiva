@@ -20,8 +20,9 @@ import {
 import { Upload } from "lucide-react";
 
 const Index = () => {
+  const defaultLogo = "/logogaz.png";
   const [customLogo, setCustomLogo] = useState<string | null>(
-    localStorage.getItem("customLogo")
+    localStorage.getItem("customLogo") || defaultLogo
   );
   const [managerOpen, setManagerOpen] = useState(false);
   const [logoUploadOpen, setLogoUploadOpen] = useState(false);
@@ -107,7 +108,7 @@ const Index = () => {
   };
 
   const handleRemoveLogo = () => {
-    setCustomLogo(null);
+    setCustomLogo(defaultLogo);
     localStorage.removeItem("customLogo");
   };
 
