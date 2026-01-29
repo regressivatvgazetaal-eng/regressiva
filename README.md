@@ -32,7 +32,7 @@ Sistema de cronômetro para eventos com gerenciamento de tempos e personalizaç�
 git clone <YOUR_GIT_URL>
 
 # Entre no diretório
-cd studio-event-timer
+cd regressiva
 
 # Instale as dependências
 npm install
